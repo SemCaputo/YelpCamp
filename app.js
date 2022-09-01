@@ -17,6 +17,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 
+
 const MongoDBStore = require("connect-mongo")(session);
 
 const mongoSanitize = require('express-mongo-sanitize');
@@ -133,13 +134,13 @@ app.listen(3000, () => {
 });
 
 
-store.on('error', function(e){
+store.on('error', function (e) {
     console.log('Session Store Error', e)
 })
 
 const sessionConfig = {
     store,
-    name:session,
+    name: session,
     secret: 'thisshouldbeabettersecret!',
     resave: false,
     saveUninitialized: true,
