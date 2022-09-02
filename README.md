@@ -11,8 +11,6 @@ The Node Modules used can be found in the package.json file included in the repo
 
 At the moment Yelp Camp runs locally at the address http://localhost:3000/ on your brower.
 
-
-
 Features:
 - User can create, edit and delete posts and comments
 - User can search existing campgrounds by name
@@ -23,6 +21,9 @@ Features:
 - User cannot edit or delete posts and comments created by other users
 - Flash messages responding to users' interaction with the app
 - Responsive web design
+
+
+
 
 
 
@@ -38,14 +39,28 @@ https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
 https://zarkom.net/blogs/how-to-install-mongodb-for-development-in-windows-3328
 
 
+Create an account on  Cloudinary:
+- https://cloudinary.com/
+Create an account on  MapBox:
+- https://www.mapbox.com/
+
+
+Create an .env file in the main directory:
+- add the following with your personal details from Cloudinary and MapBox
+CLOUDINARY_CLOUD_NAME=[Cloud Name]
+CLOUDINARY_KEY=[API Key]
+CLOUDINARY_SECRET=[API Secret]
+MAPBOX_TOKEN = [Default public token]
+
 Install dependencies:
 npm install
 
-
 Running locally
-run the command mongod in a terminal 
-run the command mongo in another terminal
-run the command node app.js in another terminal with the project
+- run the command mongod in a terminal window
+
+- [First time only: in a separate window select the folder with the project and run command node seeds/index.js]. This wil seed the databse with 300 randomly named Campgrounds.
+
+- in a separate terminal window select the folder with the project and run the command node app.js
 
 Then go to localhost:3000
 
