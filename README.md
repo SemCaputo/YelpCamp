@@ -47,11 +47,12 @@ Create an account on  MapBox:
 
 
 Create an .env file in the main directory:
-- add the following with your personal details from Cloudinary and MapBox
-CLOUDINARY_CLOUD_NAME=[Cloud Name]
-CLOUDINARY_KEY=[API Key]
-CLOUDINARY_SECRET=[API Secret]
-MAPBOX_TOKEN = [Default public token]
+
+add the following with your personal details from Cloudinary and MapBox
+- CLOUDINARY_CLOUD_NAME=[Cloud Name]
+- CLOUDINARY_KEY=[API Key]
+- CLOUDINARY_SECRET=[API Secret]
+- MAPBOX_TOKEN = [Default public token]
 
 Install dependencies:
 npm install
