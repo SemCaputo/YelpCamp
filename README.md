@@ -41,6 +41,7 @@ https://zarkom.net/blogs/how-to-install-mongodb-for-development-in-windows-3328
 
 Create an account on  Cloudinary:
 - https://cloudinary.com/
+
 Create an account on  MapBox:
 - https://www.mapbox.com/
 
