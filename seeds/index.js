@@ -19,6 +19,11 @@ const seedDB = async () => {
     await Campground.deleteMany({});
     // const c = new Campground({ title: 'Purple Field' });
     // await c.save();
+
+
+    // const { _id: userId } = db.collection("users").findOne({ userName:"Andressa" })
+
+
     for (let i = 0; i < 300; i++) {
         const random1000 = Math.floor(Math.random() * 1000);
         const price = Math.floor(Math.random() * 30) + 10;
